@@ -1,0 +1,19 @@
+.square{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 350px;
+  height: 350px;
+  border: 1px solid black;
+  padding: 20px;
+  margin: auto;
+}
+
+.small-square {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border: 1px solid white;
+  background-color: aqua;
+  color: white;
+}

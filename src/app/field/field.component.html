@@ -1,0 +1,16 @@
+<button type="button" (click)="generateSquare()" [disabled]="lengthList === 36"> StartGame </button>
+<hr/>
+<div class="square" *ngIf="lengthList !== 0">
+  <button *ngFor="let square of squares; let i = index"
+          type="button" class="small-square"
+          (click)="deleteSquare(i, $event)"
+  ></button>
+</div>
+<div *ngIf="lengthList> 0">
+  <hr/>
+  <button type="button" (click)="resetGame()">Reset</button>
+  <p>Tries: {{tries}}</p>
+</div>
+
+
+
